@@ -1242,6 +1242,53 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &447702568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 447702570}
+  - component: {fileID: 447702569}
+  m_Layer: 0
+  m_Name: BuildManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &447702569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447702568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3283193b52747304d846edc2284942ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!4 &447702570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447702568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &563067387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1732,7 @@ GameObject:
   - component: {fileID: 834902745}
   - component: {fileID: 834902744}
   - component: {fileID: 834902743}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3289,9 +3336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06ff4e1890d7b54aaf83fe0912c78ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lengthInput: {fileID: 1797889538}
-  widthInput: {fileID: 1974277741}
-  heigthInput: {fileID: 2087158636}
+  lengthInput: {fileID: 1528936221}
+  widthInput: {fileID: 784893945}
+  heigthInput: {fileID: 382201043}
   myCargoItem: {fileID: 5766491270119196356, guid: 4ec54ed3e6241e14580da987621a6d0c,
     type: 3}
   myCargo: {fileID: 1822595814}
@@ -3877,3 +3924,4 @@ SceneRoots:
   - {fileID: 95497283}
   - {fileID: 1127834988}
   - {fileID: 1800576094}
+  - {fileID: 447702570}
