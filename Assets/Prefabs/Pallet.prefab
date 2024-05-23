@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 8873626712747406923}
   - component: {fileID: 7578744984746434281}
   - component: {fileID: -3827904848446803669}
+  - component: {fileID: 7182677014400019306}
+  - component: {fileID: 517274939372522957}
   m_Layer: 0
   m_Name: Pallet
-  m_TagString: Untagged
+  m_TagString: Pallet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +102,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -118,6 +120,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589ee56d804b5e14a9f31861ee2c45c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palletWidth: 0
-  palletLength: 0
-  palletHeigth: 0
+  palletWidth: 60
+  palletLength: 60
+  palletHeigth: 60
+--- !u!54 &7182677014400019306
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203668561453797841}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &517274939372522957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203668561453797841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ea6f4623582304d95a200bab15fbb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectangleSize: {x: 0, y: 0, z: 0}

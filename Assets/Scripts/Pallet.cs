@@ -10,7 +10,8 @@ public class Pallet : MonoBehaviour
 
     void Start()
     {
-        transform.localScale = new Vector3((float)palletWidth / 100, (float)palletHeigth / 100, (float)palletLength / 100);
+        transform.localScale = new Vector3((float)palletWidth *0.99f/ 100, (float)palletHeigth * 0.99f / 100, (float)palletLength * 0.99f / 100);
+        GetComponent<BoxCollider>().size = new Vector3(1,1,1);
     }
 
     void Update()
