@@ -1276,9 +1276,13 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
-  gridSize: 0.1
+  gridSize: 0.01
   gridToggle: {fileID: 2102777282}
   rotateAmount: 45
+  materials:
+  - {fileID: 2100000, guid: bd16ac7acd5e9be4c905948f404eb25d, type: 2}
+  - {fileID: 2100000, guid: 3d672caa90d4a604b9d9794a0106f285, type: 2}
+  - {fileID: 2100000, guid: 5071ecb8b09d9274c9cc6e8d48417d89, type: 2}
   canPlace: 1
 --- !u!4 &447702570
 Transform:

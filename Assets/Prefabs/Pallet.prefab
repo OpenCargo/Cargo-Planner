@@ -162,4 +162,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ea6f4623582304d95a200bab15fbb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rectangleSize: {x: 0, y: 0, z: 0}
