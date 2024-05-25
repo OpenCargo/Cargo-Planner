@@ -12,7 +12,7 @@ public class CheckPlacement : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Pallet"))
+        if (other.gameObject.CompareTag("Pallet") || other.gameObject.CompareTag("Trailer"))
         {
             buildManager.canPlace = false;
         }
@@ -20,7 +20,7 @@ public class CheckPlacement : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Pallet"))
+        if (other.gameObject.CompareTag("Pallet") || other.gameObject.CompareTag("Trailer"))
         {
             buildManager.canPlace = true;
         }
