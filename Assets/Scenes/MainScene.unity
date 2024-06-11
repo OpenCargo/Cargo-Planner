@@ -1478,7 +1478,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
-  gridSize: 0.1
+  gridSize: 0.05
   gridToggle: {fileID: 2102777282}
   rotateAmount: 45
   materials:
@@ -4372,7 +4372,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 28b9342a3f81f0546846e16e5ad41763, type: 2}
+  - {fileID: 2100000, guid: ec8c02efd102e62489549dfb507e194c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4411,7 +4411,7 @@ Transform:
   m_GameObject: {fileID: 1721574665}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9599998, y: 1.74, z: -6.51}
+  m_LocalPosition: {x: -1.047, y: 1.74, z: -6.553}
   m_LocalScale: {x: 1.36, y: 0.2, z: 0.24}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5427,7 +5427,7 @@ Transform:
   m_GameObject: {fileID: 1579255774868841953}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 6.2346826, y: 0, z: -6.517069}
+  m_LocalPosition: {x: 6.2346826, y: 0, z: -6.556}
   m_LocalScale: {x: 100, y: 150, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5627,7 +5627,7 @@ Transform:
   m_GameObject: {fileID: 4421707305898089831}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.5253175, y: -0.06999993, z: -6.4970694}
+  m_LocalPosition: {x: -0.58, y: -0.06999993, z: -6.556}
   m_LocalScale: {x: 130, y: 150, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children: []

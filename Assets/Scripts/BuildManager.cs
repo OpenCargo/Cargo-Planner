@@ -31,11 +31,11 @@ public class BuildManager : MonoBehaviour
             float palletHeight = pendingPallet.palletHeigth;
             if (isGridOn)
             {
-                pendingPallet.transform.position = new Vector3(RoundToNearestGrid(pos.x), pos.y + (float)(((palletHeight-1)/100)/2), RoundToNearestGrid(pos.z));
+                pendingPallet.transform.position = new Vector3(RoundToNearestGrid(pos.x), pos.y + (float)(((palletHeight - 1) / 100) / 2), RoundToNearestGrid(pos.z));
             }
             else
             {
-                pos.y = (float)(((palletHeight - 1)/100)/2);
+                pos.y = (float)(((palletHeight - 1) / 100) / 2);
                 pendingPallet.transform.position = pos;
             }
 
@@ -57,6 +57,7 @@ public class BuildManager : MonoBehaviour
         else
         {
             pos.y = (float)(((selectedPallet.palletHeigth - 1) / 100) / 2);
+
             pendingPallet = Instantiate(selectedPallet, pos, transform.rotation);
             selectedPallet = null;
         }
