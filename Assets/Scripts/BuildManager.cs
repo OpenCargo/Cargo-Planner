@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,7 @@ public class BuildManager : MonoBehaviour
     [SerializeField] private Toggle gridToggle;
     [SerializeField] private float rotateAmount;
     [SerializeField] private Material[] materials;
+    [SerializeField] private TextMeshProUGUI selectedPalletDimensionsTxt;
     public bool canPlace;
     void Start()
     {
@@ -56,6 +58,8 @@ public class BuildManager : MonoBehaviour
         }
         else
         {
+
+            selectedPalletDimensionsTxt.text = selectedPallet.palletWidth + "x" + selectedPallet.palletLength + "x" + selectedPallet.palletHeigth;
             pos.y = (float)(((selectedPallet.palletHeigth - 1) / 100) / 2);
 
             pendingPallet = Instantiate(selectedPallet, pos, transform.rotation);

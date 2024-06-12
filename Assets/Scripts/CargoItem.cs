@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CargoItem : MonoBehaviour
 {
-    [SerializeField] public Pallet pallet;
-
+    public Pallet pallet;
+    public TextMeshProUGUI amount;
     void Start()
     {
-
+        amount.text = pallet.palletAmount + "";
+        transform.localScale = new Vector3(1, 1, 1);
     }
 
     void Update()
@@ -18,7 +20,7 @@ public class CargoItem : MonoBehaviour
 
     public void SelectedPallet()
     {
-        
+
         BuildManager.selectedPallet = pallet;
     }
 }
