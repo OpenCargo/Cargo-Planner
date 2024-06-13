@@ -13,6 +13,7 @@ public class BuildManager : MonoBehaviour
     public static Pallet selectedPallet;
     private Pallet pendingPallet;
     [SerializeField] private LayerMask layerMask;
+    [HideInInspector] public static GameObject selectedCargoItem;
 
     [SerializeField] private float gridSize;
     private bool isGridOn = true;
@@ -72,6 +73,11 @@ public class BuildManager : MonoBehaviour
     {
         pendingPallet.GetComponent<MeshRenderer>().material = materials[2];
         pendingPallet.gameObject.layer = 3;
+        selectedCargoItem.GetComponent<CargoItem>().pallet.palletAmount -= 1;
+        if (selectedCargoItem.GetComponent<CargoItem>().pallet.palletAmount < 1)
+        {
+            Destroy(selectedCargoItem);
+        }
         pendingPallet = null;
     }
 

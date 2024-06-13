@@ -15,12 +15,12 @@ public class CargoItem : MonoBehaviour
 
     void Update()
     {
-
+        amount.text = pallet.palletAmount + "";
     }
 
     public void SelectedPallet()
     {
-
         BuildManager.selectedPallet = pallet;
+        BuildManager.selectedCargoItem = this.gameObject;
     }
 }
