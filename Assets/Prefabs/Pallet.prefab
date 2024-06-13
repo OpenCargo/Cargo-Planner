@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7611267688869617147}
   - component: {fileID: 9120537005403718829}
   - component: {fileID: 222342476266928721}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TxtPalletDimensions (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 9209905613378996949}
   - component: {fileID: 625978594175865629}
   - component: {fileID: 15109960470224604}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TxtPalletDimensions (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 1526775100978657885}
   - component: {fileID: 7769652093652135836}
   - component: {fileID: 8839182096658195666}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TxtPalletDimensions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: -3827904848446803669}
   - component: {fileID: 7182677014400019306}
   - component: {fileID: 517274939372522957}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pallet
   m_TagString: Pallet
   m_Icon: {fileID: 0}
@@ -523,9 +523,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589ee56d804b5e14a9f31861ee2c45c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palletWidth: 100
-  palletLength: 100
+  palletWidth: 200
+  palletLength: 800
   palletHeigth: 100
+  palletAmount: 0
   canvas: {fileID: 636008663600159939}
   dimensionsText:
   - {fileID: 8839182096658195666}
@@ -583,7 +584,7 @@ GameObject:
   - component: {fileID: 6833740111002413993}
   - component: {fileID: 3727580764414163515}
   - component: {fileID: 5356285919717088554}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TxtPalletDimensions (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +718,7 @@ GameObject:
   - component: {fileID: 6832809731807028163}
   - component: {fileID: 7210250415095039648}
   - component: {fileID: 5435362926243857885}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TxtPalletDimensions (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +853,7 @@ GameObject:
   - component: {fileID: 636008663600159939}
   - component: {fileID: 7885237921617784704}
   - component: {fileID: 3730249820107883405}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
